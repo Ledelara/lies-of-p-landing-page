@@ -1,0 +1,22 @@
+// Cores
+$primary-color: #b30000;
+$secondary-color: #222;
+$bg-color: #111;
+$text-color: #fff;
+
+// Fontes
+$font-primary: "Poppins", sans-serif;
+
+// Breakpoints
+$breakpoints: (
+  "mobile": 480px,
+  "tablet": 768px,
+  "desktop": 1024px,
+);
+
+// Mixins para responsividade
+@mixin respond($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
