@@ -18,7 +18,7 @@ export default function Header() {
           <a className="header_menu_text" onClick={() => navigate.push('https://lnkfi.re/LiesofP')}>Música</a>
         </li>
         <li className="header__menu__image">
-          <Image src="/images/lies-of-p-logo.png" alt="logo" width={100} height={100} />
+          <Image src="/images/lies-of-p-logo.webp" alt="logo" width={100} height={100} />
         </li>
         <li className="header__menu__item">
           <a className="header_menu_text" onClick={() => navigate.push('https://gear.liesofp.com/')}>Loja</a>
