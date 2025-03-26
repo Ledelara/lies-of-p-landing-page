@@ -1,10 +1,16 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "./variables";
 
 @font-face {
   font-family: 'Brilon';
   src: url('/fonts/Brilon.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Loretta';
+  src: url('/fonts/loretta-medium.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +22,7 @@
 }
 
 body {
-  font-family: $font-primary;
+  font-family: 'Loretta', sans-serif;
   background-color: $bg-color;
   color: $text-color;
 }
