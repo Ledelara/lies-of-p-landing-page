@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import Overture from "@/components/Overture/Overture";
+import Synopsis from "@/components/Synopsis/Synopsis";
 import React from "react";
 
 export default function Home() {
@@ -10,6 +11,9 @@ export default function Home() {
       </header>
       <section>
         <Overture />
+      </section>
+      <section>
+        <Synopsis />
       </section>
     </>
   );
