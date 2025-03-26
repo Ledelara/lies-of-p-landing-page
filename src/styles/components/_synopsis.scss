@@ -1,0 +1,62 @@
+@import '../base/variables';
+
+.synopsis__container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(184 181 176/var(--tw-bg-opacity));
+  display: grid;
+  place-items: center;
+  width: 100%;
+  font-family: 'Brilon', serif;
+
+  svg {
+    fill: #12161a;
+  }
+
+  .synopsis__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    gap: 1rem;
+    max-width: 40rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 112px;
+
+    svg {
+      margin-bottom: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      fill: none;
+    }
+  }
+
+  h2.synopsis__title {
+    color: rgb(121, 103, 65);
+    gap: unset;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  p.synopsis__paragraph {
+    font-family: 'Loretta', serif;
+    --tw-text-opacity: 1!important;
+    color: rgb(62 74 80/var(--tw-text-opacity))!important;
+    font-weight: 300;
+    letter-spacing: .7px;
+  }
+
+  @include respond("mobile") {
+
+    h2.synopsis__title {
+      font-size: 30px;
+    }
+    
+    p.synopsis__paragraph {
+      font-size: 14px;
+      margin: 0 20px;
+    }
+  }
+}
