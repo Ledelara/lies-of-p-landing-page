@@ -1,6 +1,7 @@
 import Header from "@/components/Header/Header";
 import Overture from "@/components/Overture/Overture";
 import Synopsis from "@/components/Synopsis/Synopsis";
+import "../styles/components/_sections.scss";
 import React from "react";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       <section>
         <Overture />
       </section>
-      <section>
+      <section className="section__synopsis">
         <Synopsis />
       </section>
     </>
