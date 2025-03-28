@@ -42,7 +42,7 @@ export default function Carousel() {
       spaceBetween={50}
       slidesPerView={1}
       /* navigation */
-      /* autoplay={{ delay: 3000, disableOnInteraction: false }} */
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
       pagination={{ clickable: true }}
       loop
       className="carousel"
