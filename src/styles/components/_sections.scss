@@ -1,0 +1,14 @@
+@import '../base/variables';
+
+.section__synopsis,
+.section__carousel {
+  --tw-bg-opacity: 1;
+  background-color: rgb(184 181 176/var(--tw-bg-opacity));
+}
+
+@include respond("mobile")  {
+  .section__carousel {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+}

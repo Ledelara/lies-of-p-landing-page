@@ -1,5 +1,5 @@
-import "../../styles/components/_overture.scss";
 import Image from "next/image";
+import "../../styles/components/_overture.scss";
 
 export default function Overture() {
   return (

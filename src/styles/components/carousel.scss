@@ -1,0 +1,130 @@
+@import '../base/variables';
+
+.carousel {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: white;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: rgb(62, 74, 80) !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: rgb(62, 74, 80) !important;
+  }
+
+  .carousel__slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    width: 100%;
+  }
+
+  .carousel__text {
+    flex: 1;
+    max-width: 40%;
+    min-width: 300px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.80px;
+  }
+
+  .carousel__title {
+    font-family: 'Loretta', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(62, 74, 80);
+  }
+
+  .carousel__line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+  }
+
+  .carousel__arrow__span {
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: rgb(121, 103, 65);
+  }
+
+  .carousel__description {
+    font-size: 16px;
+    color: rgb(62, 74, 80);
+    margin-top: 10px;
+  }
+
+  .carousel__image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @include respond("mobile") {
+    .carousel__slide {
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      justify-content: center;
+    }
+  
+    .carousel__image-container {
+      order: -1;
+      max-width: 100%;
+      padding: 0;
+      width: 100%;
+      height: auto;
+    }
+  
+    .carousel__text {
+      max-width: 100%;
+      text-align: center;
+      order: 1;
+    }
+  
+    .carousel__title {
+      font-size: 20px;
+    }
+  
+    .carousel__description {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  
+    .carousel__arrow__span {
+      width: 100%;
+    }
+  
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+  
+    .carousel__image {
+      width: 100%;
+      height: 100%;
+      max-height: 500px;
+    }
+  }
+}
