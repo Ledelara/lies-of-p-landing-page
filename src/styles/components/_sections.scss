@@ -6,6 +6,11 @@
   background-color: rgb(184 181 176/var(--tw-bg-opacity));
 }
 
+.section__carousel {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
 @include respond("mobile")  {
   .section__carousel {
     border-bottom-left-radius: 50px;
