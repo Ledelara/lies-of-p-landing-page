@@ -27,16 +27,19 @@ export default function Awards() {
           </svg>
         </div>
         <div className="awards__description">
-        <p className="awards__description__paragraph">
-          Da narrativa cativante ao design assombrosamente belo, Lies of P conquistou reconhecimento por redefinir o gênero soulslike. Uma história entrelaçada com escuridão e intriga, cativou jogadores e críticos.
-        </p>
+          <p className="awards__description__paragraph">
+            Da narrativa cativante ao design assombrosamente belo, Lies of P
+            conquistou reconhecimento por redefinir o gênero soulslike. Uma
+            história entrelaçada com escuridão e intriga, cativou jogadores e
+            críticos.
+          </p>
+        </div>
       </div>
-    </div>
-      <Image 
+      <Image
         className="awards__image"
         src="/images/assets/1738678584-lop-awards.avif"
-        alt="Lies Of P - Awards"  
-        width={723}  
+        alt="Lies Of P - Awards"
+        width={723}
         height={406}
       />
     </div>
