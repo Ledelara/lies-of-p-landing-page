@@ -31,7 +31,7 @@ export default function Awards() {
           Da narrativa cativante ao design assombrosamente belo, Lies of P conquistou reconhecimento por redefinir o gênero soulslike. Uma história entrelaçada com escuridão e intriga, cativou jogadores e críticos.
         </p>
       </div>
-      </div>
+    </div>
       <Image 
         className="awards__image"
         src="/images/assets/1738678584-lop-awards.avif"
