@@ -6,6 +6,7 @@ import Header from "@/components/Header/Header";
 import Overture from "@/components/Overture/Overture";
 import Synopsis from "@/components/Synopsis/Synopsis";
 import "../styles/components/_sections.scss";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -98,6 +99,9 @@ export default function Home() {
           ></path>
         </svg>
         <Register />
+      </section>
+      <section className="section__footer">
+        <Footer />
       </section>
     </>
   );

@@ -1,0 +1,40 @@
+.SocialMedia__container {
+  padding: 48px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+
+  .SocialMedia__link {
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    --tw-text-opacity: 1;
+    color: rgb(121 103 65/var(--tw-text-opacity));
+    cursor: pointer;
+    position: relative;
+
+    .SocialMedia__image {
+      visibility: hidden;
+      position: absolute;
+      left: -7px;
+    }
+
+    svg {
+      display: block;
+      width: 21px;
+      height: 15px;
+      fill: currentColor;
+    }
+
+    &:hover {
+      --tw-text-opacity: 1;
+      color: rgb(199 58 58/var(--tw-text-opacity));
+
+      .SocialMedia__image {
+        visibility: visible;
+      }
+    } 
+  }
+}

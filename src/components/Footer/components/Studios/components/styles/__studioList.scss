@@ -1,0 +1,31 @@
+@import '../../../../../../styles/base/variables';
+
+.studio-list__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  .studio-list__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .studio-list__link {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@include respond("mobile") {
+  .studio-list__container {
+    .studio-list__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+
