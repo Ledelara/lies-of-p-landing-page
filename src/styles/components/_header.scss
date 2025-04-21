@@ -1,66 +1,64 @@
-@import '../base/variables';
-
 .header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  border-radius: 20px;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  font-family: 'Loretta', serif;
+  z-index: 9999;
+  background-color: transparent;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  transform: translateY(0);
+  opacity: 1;
 
-  ul.header__menu {
+  &.scrolled {
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .header__nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 30rem;
+    justify-content: center;
+  }
 
-    li.header__menu__item {
+  .header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+
+    li {
       cursor: pointer;
-    }
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s;
 
-    @include respond("tablet") {
-      padding: 0 10rem;
-    }
-
-    @include respond("mobile") {
-      flex-direction: column;
-      padding: 0 1rem;
-      gap: 1rem;
+      &:hover {
+        color: #c10000;
+      }
     }
   }
 
-  a.header_menu_text {
-    font-size: 20px;
-    transition: ease-in-out 0.3s;
+  .header__logo {
+    cursor: pointer;
 
-    &:hover {
-      color: #f00;
-      transition: ease-in-out 0.3s;
+    img {
+      height: auto;
+      width: 120px;
     }
-  }
-
-  // Responsividade para dispositivos móveis
-  @include respond("mobile") {
-    ul.header__menu {
-      height: 60px;
-    }
-
-    li.header__menu__item {
-      display:  none;
-    }
-
-    a.header_menu_text {
-      display: none;
-    }
-  }
-
-  // Responsividade para tablets
-  @include respond("tablet") {
-    font-size: 1.4rem;
   }
 }
