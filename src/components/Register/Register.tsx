@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "../../styles/components/_register.scss";
 import Form from "./components/Form";
 
@@ -38,15 +37,6 @@ export default function Register() {
         </div>
         <div className="form__container">
           <Form />
-          <Image
-            className="register__image"
-            src="/images/assets/signup-character.webp"
-            alt="Lies Of P - Register"
-            width={723}
-            height={406}
-            priority={true}
-            quality={100}
-          />
         </div>
       </div>
     </div>
